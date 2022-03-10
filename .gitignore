@@ -1,2 +1,4 @@
-gqldoc
 .DS_Store
+takopi
+takopi.wasm
+wasm_exec.js
