@@ -19,12 +19,15 @@ $ echo "はい、いいえ、どうだ" | takopi
 
     $ go install github.com/Code-Hex/takopi/cmd/takopi@latest
 
-### Mac and Linux users via Homebrew
+## Mac and Linux users via Homebrew
 
     $ brew update
     $ brew install Code-Hex/tap/takopi
 
-### Binary
+## Binary
 
 You can download from [here](https://github.com/Code-Hex/takopi/releases)
     
+## Related Projects
+
+https://github.com/Code-Hex/takopi-slack
