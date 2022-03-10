@@ -1,4 +1,4 @@
-package piyolize
+package takopi
 
 import (
 	"fmt"
@@ -41,15 +41,16 @@ func Do(msg string) string {
 		}
 		if replace, ok := dict[key]; ok {
 			buf.WriteString(replace)
+			isLastSymbol = true
 		} else {
 			buf.WriteString(token.Surface)
+			isLastSymbol = features[0] == "記号"
 		}
-		isLastSymbol = features[0] == "記号"
 	}
 	if isLastSymbol {
 		return buf.String()
 	}
-	return buf.String() + "ぴよぴよ🐥"
+	return buf.String() + "っピ！"
 }
 
 func tokenize(msg string) []tokenizer.Token {
@@ -85,6 +86,14 @@ func normalize(msg string) string {
 		{
 			old: "じゃないの",
 			new: "じゃない？",
+		},
+		{
+			old: "どうする",
+			new: "どうする？",
+		},
+		{
+			old: "?",
+			new: "？",
 		},
 	}
 	for _, c := range cases {

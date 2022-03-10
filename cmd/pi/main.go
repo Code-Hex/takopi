@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/Code-Hex/piyolize"
+	"github.com/Code-Hex/takopi"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func run(ctx context.Context) error {
 	if err != nil {
 		return fmt.Errorf("failed to get message: %w", err)
 	}
-	fmt.Println(piyolize.Do(msg))
+	fmt.Println(takopi.Do(msg))
 	return nil
 }
 

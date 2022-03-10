@@ -1,4 +1,4 @@
-module github.com/Code-Hex/piyolize
+module github.com/Code-Hex/takopi
 
 go 1.17
 

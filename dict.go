@@ -1,4 +1,4 @@
-package piyolize
+package takopi
 
 type key struct {
 	pos   string // 名詞や感動詞など
@@ -11,35 +11,45 @@ var dict = map[key]string{
 		pos:   "感動詞",
 		affix: "*",
 		want:  "はい",
-	}: "そうぴよ🐥",
+	}: "そうだっピ",
 	{
 		pos:   "感動詞",
 		affix: "*",
 		want:  "いいえ",
-	}: "ちがうぴよ🐥",
+	}: "ちがうっピ",
 	{
 		pos:   "記号",
 		affix: "一般",
 		want:  "？",
-	}: "ぴよ🐥？",
-	{
-		pos:   "名詞",
-		affix: "一般",
-		want:  "人",
-	}: "🐥",
+	}: "っピ？",
 	{
 		pos:   "形容詞",
 		affix: "自立",
 		want:  "しんどい",
-	}: "つらぴよ🐥",
+	}: "つらいっピ",
 	{
 		pos:   "形容詞",
 		affix: "自立",
 		want:  "つらい",
-	}: "つらぴよ🐥",
+	}: "つらいっピ",
 	{
 		pos:   "形容詞",
 		affix: "自立",
 		want:  "辛い",
-	}: "つらぴよ🐥",
+	}: "つらいっピ",
+	{
+		pos:   "感動詞",
+		affix: "*",
+		want:  "ありがとう",
+	}: "ありがとだっピ！",
+	{
+		pos:   "動詞",
+		affix: "非自立",
+		want:  "てる",
+	}: "てるっピ！",
+	{
+		pos:   "助詞",
+		affix: "副助詞",
+		want:  "か",
+	}: "っピか",
 }
